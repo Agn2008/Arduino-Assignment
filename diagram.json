@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "author": "Agnes Owusu",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 125.4, "left": 9, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -70.8,
+      "left": 243.8,
+      "attrs": { "color": "red" }
+    }
+  ],
+  "connections": [
+    [ "uno:13", "led1:A", "purple", [ "v0" ] ],
+    [ "uno:9", "led1:C", "green", [ "v0" ] ],
+    [ "uno:9", "uno:GND.2", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
